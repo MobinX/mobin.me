@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@mir_sazzat",
-    creator: "@mir_sazzat",
+    site: "@mobincx",
+    creator: "@mobincx",
     title: "Resources - Md. Mobin Chowdhury",
     description:
       "These materials have been tremendously beneficial to me in my learning path. I hope you find these helpful as well!",

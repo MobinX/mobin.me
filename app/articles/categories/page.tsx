@@ -63,8 +63,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      site: "@mir_sazzat",
-      creator: "@mir_sazzat",
+      site: "@mobincx",
+      creator: "@mobincx",
       title: "Article Categories - Md. Mobin Chowdhury",
       description:
         "This page contains all the categories of articles available on this website.",

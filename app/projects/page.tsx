@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@mir_sazzat",
-    creator: "@mir_sazzat",
+    site: "@mobincx",
+    creator: "@mobincx",
     title: "Projects - Md. Mobin Chowdhury",
     description:
       "I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.",

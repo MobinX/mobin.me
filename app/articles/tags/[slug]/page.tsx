@@ -54,8 +54,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      site: "@mir_sazzat",
-      creator: "@mir_sazzat",
+      site: "@mobincx",
+      creator: "@mobincx",
       title: `Articles tagged with ${params.slug} - Md. Mobin Chowdhury`,
       description: `This page contains all the articles ${
         params?.slug ? `tagged with ${params.slug}` : ""

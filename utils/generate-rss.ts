@@ -3,7 +3,7 @@ import { Feed } from "feed";
 import fs from "fs";
 
 export default async function generateRss(): Promise<void> {
-  const site_url = `${process.env.SITE_URL || "https://mirsazzathossain.me"}`;
+  const site_url = `${process.env.SITE_URL || "https://mobin.me"}`;
 
   const articles = await allArticles;
 
@@ -15,8 +15,8 @@ export default async function generateRss(): Promise<void> {
 
   const author = {
     name: "Md. Mobin Chowdhury",
-    email: "mirsazzathossain@gmail.com",
-    link: "https://mirsazzathossain.me",
+    email: "mobinx@gmail.com",
+    link: "https://mobin.me",
   };
 
   const feedOptions = {

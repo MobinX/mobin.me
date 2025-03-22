@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    site: "@mir_sazzat",
-    creator: "@mir_sazzat",
+    site: "@mobincx",
+    creator: "@mobincx",
     title: "Articles - Md. Mobin Chowdhury",
     description:
       "All my articles are written with the goal of helping you learn something new. I hope you enjoy them!",

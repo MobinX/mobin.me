@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@mir_sazzat",
-    creator: "@mir_sazzat",
+    site: "@mobincx",
+    creator: "@mobincx",
     title: "Courses - Md. Mobin Chowdhury",
     description:
       "During my time at IUB, I've worked as a teaching assistant and research assistant for a few different courses. These are the courses I've instructed.",

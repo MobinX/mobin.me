@@ -113,11 +113,11 @@ export const metadata: Metadata = {
   manifest: `./site.webmanifest/`,
   twitter: {
     card: "summary_large_image",
-    site: "@mir_sazzat",
+    site: "@mobincx",
     title: "Md. Mobin Chowdhury | Personal Website",
     description:
       "Md. Mobin Chowdhury is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
-    creator: "@mir_sazzat",
+    creator: "@mobincx",
     images: [
       {
         url: `${server}/images/og-image.png`,

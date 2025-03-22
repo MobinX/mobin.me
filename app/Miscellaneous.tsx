@@ -15,7 +15,7 @@ export default function Miscellaneous(): JSX.Element {
             <li className="mb-2">
               <a
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
-                href="https://www.mirsazzathossain.me/files/vc-list.pdf"
+                href="https://www.mobin.me/files/vc-list.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -29,7 +29,7 @@ export default function Miscellaneous(): JSX.Element {
             <li className="mb-2">
               <a
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
-                href="https://www.mirsazzathossain.me/files/deans-merit-list.pdf"
+                href="https://www.mobin.me/files/deans-merit-list.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -41,7 +41,7 @@ export default function Miscellaneous(): JSX.Element {
             <li className="mb-2">
               <a
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
-                href="https://www.mirsazzathossain.me/files/deans-list.pdf"
+                href="https://www.mobin.me/files/deans-list.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -64,7 +64,7 @@ export default function Miscellaneous(): JSX.Element {
             <li className="mb-2">
               <a
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
-                href="https://www.mirsazzathossain.me/files/icpc-asia-dhaka-2019.pdf"
+                href="https://www.mobin.me/files/icpc-asia-dhaka-2019.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -78,7 +78,7 @@ export default function Miscellaneous(): JSX.Element {
             <li className="mb-2">
               <a
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
-                href="https://www.mirsazzathossain.me/files/intra-iub-tech-fest-2019.pdf"
+                href="https://www.mobin.me/files/intra-iub-tech-fest-2019.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -89,7 +89,7 @@ export default function Miscellaneous(): JSX.Element {
             <li className="mb-2">
               <a
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
-                href="https://www.mirsazzathossain.me/files/acm-week-code-debugging-2019.pdf"
+                href="https://www.mobin.me/files/acm-week-code-debugging-2019.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -100,7 +100,7 @@ export default function Miscellaneous(): JSX.Element {
             <li className="mb-2">
               <a
                 className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100"
-                href="https://www.mirsazzathossain.me/files/extracurricular.pdf"
+                href="https://www.mobin.me/files/extracurricular.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

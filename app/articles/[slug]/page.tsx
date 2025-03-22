@@ -65,8 +65,8 @@ export async function generateMetadata({
           alt: article?.title,
         },
       ],
-      site: "@mir_sazzat",
-      creator: "@mir_sazzat",
+      site: "@mobincx",
+      creator: "@mobincx",
     },
 
     // Alternates
