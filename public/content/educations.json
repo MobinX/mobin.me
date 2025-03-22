@@ -1,19 +1,23 @@
 [
   {
-    "school": "Independent University, Bangladesh",
-    "schoolURL": "https://iub.edu.bd/",
-    "schoolLogo": "/images/iub.png",
-    "schoolLocation": "Plot 16, Aftabuddin Ahmed Road, Block B, Bashnudhara RA, Dhaka 1229, Bangladesh.",
+    "school": "University of Dhaka",
+    "schoolURL": "https://www.du.ac.bd/body/PHY",
+    "schoolLogo": "/images/du.png",
+    "schoolLocation": "Dhaka 1000, Bangladesh",
     "degree": "Bachelor of Science - BS",
-    "major": "Computer Science and Engineering",
-    "minor": "Engineering Mathematics",
-    "date": "2017 - 2021",
-    "description": "Completed Bachelor of Science in CSE with a minor in Engineering Mathematics at IUB in 2021 with a CGPA of 3.64. Participated in extracurricular activities such as hackathons, olympiads, and programming contests. Notably, I have represented IUB in the ICPC Asia Dhaka Regional competition in 2019. These experiences have helped me develop a strong foundation in computer science and valuable skills.",
+    "major": "Physics",
+    "minor": "",
+    "date": "2024 - Present",
+    "description": "Currently pursuing undergraduate studies in the Department of Physics with a focus on theoretical physics, including quantum gravity and quantum computing. Maintaining expertise as a self-taught developer while advancing knowledge in pure physics. Research interests include the intersection of quantum physics and computational sciences.",
     "activitiesandsocieties": [
-      "Competitive Programming",
-      "JUKTI - Club of CSE IUB",
-      "IEEE Computer Society IUB Student Branch Chapter",
-      "IUB ACM Student Chapter"
+      "Artificial Intelligence Research",
+      "Quantum Computing",
+      "Quantum Information Theory",
+      "Large Language Models",
+      "Computer Science",
+      "Machine Learning",
+      "Deep Learning"
+
     ]
   }
 ]
