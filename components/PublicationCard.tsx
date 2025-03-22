@@ -13,7 +13,7 @@ export default function PublicationCard({
             key={index}
             //   if author contains M.S. and Hossain, semi-bold the M.S. and Hossain
             className={`${
-              author.includes("M.S.") && author.includes("Hossain")
+              author.includes("MM") && author.includes("Chowdhury")
                 ? "font-semibold"
                 : ""
             }`}

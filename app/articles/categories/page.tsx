@@ -1,8 +1,13 @@
 import { Container } from "components/Container";
 import { server } from "config";
 import { allArticles, Article, Category } from "contentlayer/generated";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+  colorScheme: "light",
+}
 
 // Get sorted articles from the contentlayer
 async function getSortedArticles(): Promise<Article[]> {

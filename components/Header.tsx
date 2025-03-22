@@ -97,7 +97,7 @@ export default function Header(): JSX.Element {
       }
 
       let fromScale = 1;
-      let toScale = 36 / 64;
+      let toScale = 44 / 64;
       let fromX = 0;
       let toX = 2 / 16;
 
@@ -166,16 +166,10 @@ export default function Header(): JSX.Element {
               style={{ position: "var(--header-position)" }}
             >
               <div className="relative">
-                <AvatarContainer
-                  className="absolute left-0 top-3 origin-left transition-opacity"
-                  style={{
-                    opacity: "var(--avatar-border-opacity, 0)",
-                    transform: "var(--avatar-border-transform)",
-                  }}
-                />
+               
                 <Avatar
                   large
-                  className="block h-16 w-16 origin-left"
+                  className="block h-24 w-24 origin-left"
                   style={{ transform: "var(--avatar-image-transform)" }}
                 />
               </div>

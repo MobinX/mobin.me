@@ -1,11 +1,21 @@
 
-{
-    "publications": [
+[
         {
             "title": "A large Language Model is not the Right Path to Bring Artificial General Intelligence",
-            "authors": "Md Mobin Chowdhury and Mohammad Shihab Hossain and Md Faruk Abdullah Al Sohan",
+            "author": "MM Chowdhury and MS Hossain and MFA Al Sohan",
             "year": 2024,
-            "note": "Publication date: 2024/12/21"
+            "doi": "https://doi.org/10.46254/BA07.20240047",
+            "month": 12,
+            "type": "article",
+            "day": 21,
+            "journal": "IEOM Society International, USA",
+            "url":"https://www.researchgate.net/publication/389855793_A_large_Language_Model_is_not_the_Right_Path_to_Bring_Artificial_General_Intelligence",
+            "keywords": [
+                "Artificial Intelligence",
+                "Large Language Models",
+                "Artificial General Intelligence",
+                "AI Safety",
+                "AI Alignment"
+            ]
         }
     ]
-}

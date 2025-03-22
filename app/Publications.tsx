@@ -11,6 +11,7 @@ export default function Publications({
 }): JSX.Element {
   let [isExpanded, setIsExpanded] = useState(false);
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+  console.log(publications);
 
   return (
     <>

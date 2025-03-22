@@ -1,9 +1,12 @@
 import SimpleLayout from "components/SimpleLayout";
 import { server } from "config";
 import { allArticles, Article } from "contentlayer/generated";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import SearchArticles from "./SearchArticles";
-
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+  colorScheme: "light",
+}
 export const metadata: Metadata = {
   title: "Articles",
   description:
@@ -81,7 +84,7 @@ export default async function Articles({
   searchParams?: { [key: string]: string | string[] | undefined };
 }): Promise<JSX.Element> {
   const articles = await getSortedArticles();
-  const page = searchParams?.page ? parseInt(searchParams.page as string) : 1;
+  const page = await  searchParams?.page ? parseInt(await searchParams?.page as string) : 1;
 
   return (
     <SimpleLayout
