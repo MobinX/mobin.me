@@ -32,9 +32,7 @@ export default function AuthorCard({
           <div>
             <p className="text-justify">
               <Link href={article.author.url || ""}> Md. Mobin Chowdhury</Link>{" "}
-              is a Junior Research Scientist working at the Independent
-              University of Bangladesh&apos;s Center for Computation and Data
-              Science (CCDS).
+              is an undergraduate Physics student at University of Dhaka, combining theoretical physics research with self-taught expertise in AI and quantum computing.
             </p>
           </div>
         </div>
