@@ -24,6 +24,18 @@
     }
   },
   {
+    "title": "Virsys AI Lab",
+    "description": "A landing page for Virsys AI Lab, showcasing the latest projects and research in AI and machine learning.",
+    "link": {
+      "href": "https://landingpagex.vercel.app/",
+      "label": "Virsys AI Lab"
+    },
+    "logo": {
+      "src": "project-logos/virsys-landing.webp",
+      "alt": "Virsys Landing Page Logo"
+    }
+  },
+  {
     "title": "NftHub: A website for NFT HUB system",
     "description": "A website for NFT HUB system, where users can create and manage their own NFTs. ",
     "link": {
@@ -31,20 +43,21 @@
       "label": "nft"
     },
     "logo": {
-      "src": "project-logos/nft-hub.png",
+      "src": "project-logos/nfthub.webp",
       "alt": "NftHub"
     }
   },
   {
-    "title": "Spotify Playing Now: A card for showing your currently playing Spotify song",
-    "description": "A card for showing your currently playing Spotify song on your GitHub profile README or other markdown file. 🎵🎶",
+    "title": "BD Chefs",
+    "description": "A website for connecting chefs and food lovers. Users can create and manage their own recipes, and chefs can showcase their skills. Made with Next.js, Tailwind CSS, and MongoDB.",
     "link": {
-      "href": "https://github.com/mobinx/spotify-playing-now",
-      "label": "spotify-playing-now"
+      "href": "https://github.com/MobinX/BD-Chefs",
+      "label": "BD Chefs"
     },
     "logo": {
-      "src": "project-logos/spotify-playing-now.png",
-      "alt": "Spotify Playing Now"
+      "src": "project-logos/bdchefs.png",
+      "alt": "BD Chefs"
     }
   }
+
 ]
