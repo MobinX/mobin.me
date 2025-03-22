@@ -5,8 +5,8 @@ import SpotifyPlayingNow from "./SpotifyPlayingNow";
 const navigations = [
   { href: "/articles", label: "Articles" },
   { href: "/projects", label: "Projects" },
-  { href: "/courses", label: "Courses" },
-  { href: "/snippets", label: "Snippets" },
+  // { href: "/courses", label: "Courses" },
+  // { href: "/snippets", label: "Snippets" },
   { href: "/resources", label: "Resources" },
 ];
 

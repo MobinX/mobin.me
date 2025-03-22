@@ -7,7 +7,7 @@
       "label": "mobin.me"
     },
     "logo": {
-      "src": "project-logos/mobinx-me.png",
+      "src": "user.png",
       "alt": "mobin.me"
     }
   },
@@ -43,7 +43,7 @@
       "label": "nft"
     },
     "logo": {
-      "src": "project-logos/nfthub.webp",
+      "src": "project-logos/nfthub.png",
       "alt": "NftHub"
     }
   },

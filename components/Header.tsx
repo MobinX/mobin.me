@@ -13,8 +13,8 @@ const navigations = [
   { href: "/", label: "Home" },
   { href: "/#publications", label: "Publications" },
   { href: "/projects", label: "Projects" },
-  { href: "/courses", label: "Courses" },
-  { href: "/snippets", label: "Snippets" },
+  // { href: "/courses", label: "Courses" },
+  // { href: "/snippets", label: "Snippets" },
   { href: "/resources", label: "Resources" },
   { href: "/articles", label: "Posts" },
 ];
