@@ -3,11 +3,7 @@
     "publications": [
         {
             "title": "A large Language Model is not the Right Path to Bring Artificial General Intelligence",
-            "authors": [
-                "Md Mobin Chowdhury",
-                "Mohammad Shihab Hossain",
-                "Md Faruk Abdullah Al Sohan"
-            ],
+            "authors": "Md Mobin Chowdhury and Mohammad Shihab Hossain and Md Faruk Abdullah Al Sohan",
             "year": 2024,
             "note": "Publication date: 2024/12/21"
         }
