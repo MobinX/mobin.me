@@ -8,24 +8,24 @@ import ClientThemeProvider from "./theme-provider";
 
 export const metadata: Metadata = {
   title: {
-    default: "Mir Sazzat Hossain | Personal Website",
-    template: "%s - Mir Sazzat Hossain",
+    default: "Md. Mobin Chowdhury | Personal Website",
+    template: "%s - Md. Mobin Chowdhury",
   },
   description:
-    "Mir Sazzat Hossain is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
-  generator: "Mir Sazzat Hossain - Personal Website",
-  applicationName: "Mir Sazzat Hossain - Personal Website",
+    "Md. Mobin Chowdhury is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
+  generator: "Md. Mobin Chowdhury - Personal Website",
+  applicationName: "Md. Mobin Chowdhury - Personal Website",
   referrer: "origin-when-cross-origin",
   keywords: [
-    "Mir Sazzat Hossain",
+    "Md. Mobin Chowdhury",
     "Mir Sazzat",
     "Sazzat",
     "Sazzat Hossain",
     "Mir",
     "Hossain",
-    "Mir Sazzat Hossain",
-    "Mir Sazzat Hossain | Personal Website",
-    "Mir Sazzat Hossain - Personal Website",
+    "Md. Mobin Chowdhury",
+    "Md. Mobin Chowdhury | Personal Website",
+    "Md. Mobin Chowdhury - Personal Website",
     "Sajjad",
     "Sajjat",
     "Hossain",
@@ -34,31 +34,31 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Mir Sazzat Hossain",
+      name: "Md. Mobin Chowdhury",
       url: `${server}`,
     },
   ],
   themeColor: "#ffffff",
   colorScheme: "light",
-  creator: "Mir Sazzat Hossain",
-  publisher: "Mir Sazzat Hossain",
+  creator: "Md. Mobin Chowdhury",
+  publisher: "Md. Mobin Chowdhury",
   formatDetection: {
     telephone: true,
     address: true,
     email: true,
   },
   openGraph: {
-    title: "Mir Sazzat Hossain | Personal Website",
+    title: "Md. Mobin Chowdhury | Personal Website",
     description:
-      "Mir Sazzat Hossain is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
+      "Md. Mobin Chowdhury is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
     url: `${server}`,
-    siteName: "Mir Sazzat Hossain | Personal Website",
+    siteName: "Md. Mobin Chowdhury | Personal Website",
     images: [
       {
         url: `${server}/images/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Mir Sazzat Hossain | Personal Website",
+        alt: "Md. Mobin Chowdhury | Personal Website",
       },
     ],
     locale: "en_US",
@@ -114,16 +114,16 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@mir_sazzat",
-    title: "Mir Sazzat Hossain | Personal Website",
+    title: "Md. Mobin Chowdhury | Personal Website",
     description:
-      "Mir Sazzat Hossain is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
+      "Md. Mobin Chowdhury is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
     creator: "@mir_sazzat",
     images: [
       {
         url: `${server}/images/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Mir Sazzat Hossain | Personal Website",
+        alt: "Md. Mobin Chowdhury | Personal Website",
       },
     ],
   },

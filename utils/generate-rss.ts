@@ -14,14 +14,14 @@ export default async function generateRss(): Promise<void> {
   );
 
   const author = {
-    name: "Mir Sazzat Hossain",
+    name: "Md. Mobin Chowdhury",
     email: "mirsazzathossain@gmail.com",
     link: "https://mirsazzathossain.me",
   };
 
   const feedOptions = {
-    title: "RSS Feed - Mir Sazzat Hossain",
-    description: "Mir Sazzat Hossain's personal blog",
+    title: "RSS Feed - Md. Mobin Chowdhury",
+    description: "Md. Mobin Chowdhury's personal blog",
     id: site_url,
     link: site_url,
     image: `${site_url}/images/og-image.png`,

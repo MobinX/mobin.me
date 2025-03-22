@@ -10,16 +10,16 @@ export const metadata: Metadata = {
   description:
     "During my time at IUB, I've worked as a teaching assistant and research assistant for a few different courses. These are the courses I've instructed.",
   openGraph: {
-    title: "Courses - Mir Sazzat Hossain",
+    title: "Courses - Md. Mobin Chowdhury",
     description:
       "During my time at IUB, I've worked as a teaching assistant and research assistant for a few different courses. These are the courses I've instructed.",
     url: `${server}/courses`,
     type: "website",
-    site_name: "Mir Sazzat Hossain | Personal Website",
+    site_name: "Md. Mobin Chowdhury | Personal Website",
     images: [
       {
         url: `${server}/images/og-image.png`,
-        alt: "Mir Sazzat Hossain",
+        alt: "Md. Mobin Chowdhury",
         width: 1200,
         height: 630,
       },
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@mir_sazzat",
     creator: "@mir_sazzat",
-    title: "Courses - Mir Sazzat Hossain",
+    title: "Courses - Md. Mobin Chowdhury",
     description:
       "During my time at IUB, I've worked as a teaching assistant and research assistant for a few different courses. These are the courses I've instructed.",
     images: [
       {
         url: `${server}/images/og-image.png`,
-        alt: "Mir Sazzat Hossain",
+        alt: "Md. Mobin Chowdhury",
         width: 1200,
         height: 630,
       },

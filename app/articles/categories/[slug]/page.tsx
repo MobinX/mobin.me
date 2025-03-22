@@ -36,12 +36,12 @@ export async function generateMetadata({
     } available on this website.`,
     openGraph: {
       type: "website",
-      title: `Articles categorized as ${params.slug} - Mir Sazzat Hossain`,
+      title: `Articles categorized as ${params.slug} - Md. Mobin Chowdhury`,
       description: `This page contains all the articles ${
         params?.slug ? `categorized as ${params.slug}` : ""
       } available on this website.`,
       url: `${server}/articles/categories/${params.slug}`,
-      siteName: "Mir Sazzat Hossain | Personal Website",
+      siteName: "Md. Mobin Chowdhury | Personal Website",
       images: [
         {
           url: `${server}/images/cover.jpg`,
@@ -56,7 +56,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       site: "@mir_sazzat",
       creator: "@mir_sazzat",
-      title: `Articles categorized as ${params.slug} - Mir Sazzat Hossain`,
+      title: `Articles categorized as ${params.slug} - Md. Mobin Chowdhury`,
       description: `This page contains all the articles ${
         params?.slug ? `categorized as ${params.slug}` : ""
       } available on this website.`,

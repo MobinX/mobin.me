@@ -31,7 +31,7 @@ export default function AuthorCard({
           </div>
           <div>
             <p className="text-justify">
-              <Link href={article.author.url || ""}> Mir Sazzat Hossain</Link>{" "}
+              <Link href={article.author.url || ""}> Md. Mobin Chowdhury</Link>{" "}
               is a Junior Research Scientist working at the Independent
               University of Bangladesh&apos;s Center for Computation and Data
               Science (CCDS).

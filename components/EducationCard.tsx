@@ -24,7 +24,7 @@ export default function EducationCard({
               alt={props.school + " logo"}
               width={50}
               height={45}
-              className="h-7 w-8 ml-2 mr-12"
+              className="h-9 w-8 ml-2 mr-12"
             />
           </div>
           <div>

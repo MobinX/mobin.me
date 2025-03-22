@@ -10,16 +10,16 @@ export const metadata: Metadata = {
   description:
     "I've been writing code for a long time. Here are some of the snippets I've found useful and reusable.",
   openGraph: {
-    title: "Code Snippets - Mir Sazzat Hossain",
+    title: "Code Snippets - Md. Mobin Chowdhury",
     description:
       "I've been writing code for a long time. Here are some of the snippets I've found useful and reusable.",
     url: `${server}/snippets`,
     type: "website",
-    site_name: "Mir Sazzat Hossain | Personal Website",
+    site_name: "Md. Mobin Chowdhury | Personal Website",
     images: [
       {
         url: `${server}/images/og-image.png`,
-        alt: "Mir Sazzat Hossain",
+        alt: "Md. Mobin Chowdhury",
         width: 1200,
         height: 630,
       },
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@mir_sazzat",
     creator: "@mir_sazzat",
-    title: "Code Snippets - Mir Sazzat Hossain",
+    title: "Code Snippets - Md. Mobin Chowdhury",
     description:
       "I've been writing code for a long time. Here are some of the snippets I've found useful and reusable.",
     images: [
       {
         url: `${server}/images/og-image.png`,
-        alt: "Mir Sazzat Hossain",
+        alt: "Md. Mobin Chowdhury",
         width: 1200,
         height: 630,
       },
