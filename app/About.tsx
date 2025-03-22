@@ -120,8 +120,8 @@ export default async function About() {
                   ? "ResearchGate Profile"
                   : socialLink.name === "orcid"
                   ? "ORCID Profile"
-                    ? socialLink.name === "acm-dl"
-                    : "ACM Digital Library Profile"
+                  : socialLink.name === "acm-dl"
+                  ? "ACM Digital Library Profile"
                   : null
               }
             />

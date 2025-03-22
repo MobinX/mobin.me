@@ -43,21 +43,21 @@ async function getExperiences(): Promise<any> {
 }
 
 // get publications from the local bibliography file
-async function getPublications(): Promise<any> {
-  if (fs.existsSync("public/content/publications.bib")) {
-    const res = await ps.readFile("public/content/publications.bib", "utf-8");
-    const publications: any = BibtexParser.parseToJSON(res);
-    return publications;
-  }
+// async function getPublications(): Promise<any> {
+//   if (fs.existsSync("public/content/publications.bib")) {
+//     const res = await ps.readFile("public/content/publications.bib", "utf-8");
+//     const publications: any = BibtexParser.parseToJSON(res);
+//     return publications;
+//   }
 
-  const publications = fetch(`${server}/content/publications.bib`)
-    .then((response) => response.text())
-    .then((data) => {
-      return BibtexParser.parseToJSON(data);
-    });
+//   const publications = fetch(`${server}/content/publications.bib`)
+//     .then((response) => response.text())
+//     .then((data) => {
+//       return BibtexParser.parseToJSON(data);
+//     });
 
-  return publications;
-}
+//   return publications;
+// }
 
 // get life events from the local file
 async function getLifeEvents(): Promise<any> {
@@ -101,7 +101,7 @@ export default async function Server({
     case "Experiences":
       return <Experiences experiences={await getExperiences()} />;
     case "Publications":
-      return <Publications publications={await getPublications()} />;
+      return <Publications publications={await getExperiences()} />;
     case "Articles":
       return <Articles articles={await getSortedArticles()} />;
     case "LifeEvents":

@@ -66,5 +66,8 @@
   "main": "index.js",
   "repository": "git@github.com:mirsazzathossain/mirsazzathossain.me.git",
   "author": "mirsazzathossain <mirsazzathossain@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "trustedDependencies": [
+    "protobufjs"
+  ]
 }

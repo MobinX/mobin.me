@@ -1,37 +1,38 @@
 {
-  "name": "Mir Sazzat Hossain",
-  "designation": "Junior Research Scientist",
+  "name": "Md. Mobin Chowdhury",
+  "designation": "Undergraduate Student",
   "company": {
-    "name": "Center for Computational & Data Sciences",
-    "url": "https://ccds.ai/"
+    "name": "Department of Physics, University of Dhaka",
+    "url": "https://www.du.ac.bd/body/PHY"
   },
-  "description": "A highly motivated and aspiring researcher with a strong background in computer vision and machine learning. Over the past two years, I have actively contributed to the field, publishing research articles in well-regarded conferences such as ICIP and IJCNN. My primary research interests center around various aspects of computer vision and solving real-world problems from different domains using it. \n\nCurrently, I am working as a Junior Research Scientist at the Center for Computational & Data Sciences (CCDS) at Independent University, Bangladesh. My current research projects include domain adaptation, Mixtures-of-Experts in large multi-modal models (LMMs), protein dynamics prediction using 3D CNNs, and particle jet tagging using graph neural networks. \n\nTo advance my research experience, I am actively seeking Ph.D. positions in computer vision and machine learning, focusing on topics such as domain adaptation, self-supervised learning, generative models, and vision-language models. I am committed to continuous learning and growth and am excited to contribute to the advancement of computer vision and machine learning research.",
+  "description": "An undergraduate student in the Department of Physics at the University of Dhaka, Bangladesh, pursuing advanced studies in pure physics while maintaining expertise as a self-taught developer. Demonstrated proficiency in artificial intelligence and computer science innovations. Research interests are focused on fundamental areas of theoretical physics, including quantum gravity and quantum computing, complemented by extensive work in artificial intelligence applications. Committed to advancing the intersection of quantum physics and computational sciences.",
+
   "socialLinks": [
     {
       "name": "google-scholar",
-      "url": "https://scholar.google.com/citations?user=HriPgEQAAAAJ"
+      "url": "https://scholar.google.com/citations?user=-ODlgXgAAAAJ"
     },
     {
       "name": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/author/Mir-Sazzat-Hossain/2220031205"
+      "url": "https://scholar.google.com/citations?user=-ODlgXgAAAAJ"
     },
     {
       "name": "dblp",
-      "url": "https://dblp.org/pid/349/0737.html"
+      "url": "https://scholar.google.com/citations?user=-ODlgXgAAAAJ"
     },
     {
       "name": "github",
-      "url": "https://github.com/mirsazzathossain"
+      "url": "https://github.com/MobinX"
     },
     {
       "name": "linkedin",
-      "url": "https://linkedin.com/in/mirsazzathossain"
+      "url": "https://www.linkedin.com/in/mobinx/"
     },
     {
       "name": "twitter",
-      "url": "https://twitter.com/mir_sazzat"
+      "url": "https://x.com/mobincx"
     }
   ],
-  "resume": "files/mirsazzathossain-cv.pdf",
+  "resume": "files/47.pdf",
   "note": ""
 }
