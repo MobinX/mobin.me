@@ -119,18 +119,6 @@ const MyselfjsonLd: WithContext<Person> = {
     "https://x.com/mobincx"
   ],
   url: "https://mobinx.vercel.app",
-  memberOf: [
-    {
-      "@type": "Organization",
-      name: "International Physics Students Association",
-      url: "https://example.org/ipsa"
-    },
-    {
-      "@type": "Organization",
-      name: "AI Research Group",
-      url: "https://example.org/ai-research"
-    }
-  ],
   
   knowsLanguage: [
     {
