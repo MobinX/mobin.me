@@ -9,6 +9,9 @@ import { Suspense } from "react";
 import generateRss from "utils/generate-rss";
 import About from "./About";
 import Server from "./Server";
+import React from "react";
+import { TimelineComponent } from "./TimeLine";
+
 
 export default async function Home(): Promise<JSX.Element> {
   if (fs.existsSync("public")) {
@@ -41,6 +44,8 @@ export default async function Home(): Promise<JSX.Element> {
 
       {/* <Miscellaneous /> */}
 
+      <TimelineComponent />
+
       <Suspense fallback={<ArticlesPlaceholder />}>
         {/* @ts-expect-error Server Component */}
         <Server component="Articles" />
@@ -48,10 +53,8 @@ export default async function Home(): Promise<JSX.Element> {
 
       {/* <Calendar /> */}
 
-      <Suspense fallback={<LifeEventsPlaceholder />}>
-        {/* @ts-expect-error Server Component */}
-        <Server component="LifeEvents" />
-      </Suspense>
+
+    
     </>
   );
 }
