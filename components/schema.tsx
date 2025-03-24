@@ -131,14 +131,17 @@ const MyselfjsonLd: WithContext<Person> = {
       url: "https://example.org/ai-research"
     }
   ],
-  hasOccupation: {
-    "@type": "Occupation",
-    name: "student",
-    description: "Undergraduate student in Physics",
-    sameAs: "https://www.du.ac.bd/body/PHY",
-    occupationalCategory: "Student",
-
-  }
+  
+  knowsLanguage: [
+    {
+      "@type": "Language",
+      name: "English"
+    },
+    {
+      "@type": "Language",
+      name: "Bengali"
+    }
+  ],
 };
 
 export const FaqScript = () =>{
