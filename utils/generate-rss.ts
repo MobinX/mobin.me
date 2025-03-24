@@ -3,7 +3,7 @@ import { Feed } from "feed";
 import fs from "fs";
 
 export default async function generateRss(): Promise<void> {
-  const site_url = `${process.env.SITE_URL || "https://mobin.me"}`;
+  const site_url = `${process.env.SITE_URL || "https://mobinx.vercel.app"}`;
 
   const articles = await allArticles;
 
@@ -16,7 +16,7 @@ export default async function generateRss(): Promise<void> {
   const author = {
     name: "Md. Mobin Chowdhury",
     email: "mobinx@gmail.com",
-    link: "https://mobin.me",
+    link: "https://mobinx.vercel.app",
   };
 
   const feedOptions = {

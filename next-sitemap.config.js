@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://mobin.me",
+  siteUrl: process.env.SITE_URL || "https://mobinx.vercel.app",
   generateRobotsTxt: true,
   exclude: ['/server-sitemap.xml'],
   robotsTxtOptions: {
@@ -11,8 +11,8 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      `${process.env.SITE_URL || "https://mobin.me"}/sitemap.xml`,
-      `${process.env.SITE_URL || "https://mobin.me"}/server-sitemap.xml`,
+      `${process.env.SITE_URL || "https://mobinx.vercel.app"}/sitemap.xml`,
+      `${process.env.SITE_URL || "https://mobinx.vercel.app"}/server-sitemap.xml`,
     ],
   },
 };
