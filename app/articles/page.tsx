@@ -3,6 +3,7 @@ import { server } from "config";
 import { allArticles, Article } from "contentlayer/generated";
 import type { Metadata, Viewport } from "next";
 import SearchArticles from "./SearchArticles";
+import { MySelfScript } from "components/schema";
 export const viewport: Viewport = {
   themeColor: "#ffffff",
   colorScheme: "light",
@@ -90,7 +91,8 @@ export default async function Articles({
     <SimpleLayout
       title="Writing on Machine Learning, Advance Math, and Programming"
       intro="All my articles are written with the goal of helping you learn something new. I hope you enjoy them!"
-    >
+    > 
+      <MySelfScript />
       <SearchArticles articles={articles} page={page} />
     </SimpleLayout>
   );

@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { server } from "../config";
 import "../styles/globals.css";
 import ClientThemeProvider from "./theme-provider";
+import { MySelfScript } from "components/schema";
 
 
 export const viewport: Viewport = {
@@ -159,6 +160,7 @@ export default function RootLayout({
   return (
     <html className="h-full antialiased" lang="en">
       <head />
+      <MySelfScript />
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black min-h-screen">
         <ClientThemeProvider>
           <div className="fixed inset-0 flex justify-center sm:px-8">

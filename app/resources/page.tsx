@@ -4,6 +4,7 @@ import { server } from "config";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import ListResources from "./ListResources";
+import { MySelfScript } from "components/schema";
 
 export const metadata: Metadata = {
   title: "Resources",
@@ -56,6 +57,7 @@ export default function Resources(): JSX.Element {
       title="Some excellent resources worth sharing"
       intro="These materials have been tremendously beneficial to me in my learning path. I hope you find these helpful as well!"
     >
+      <MySelfScript />
       <div className="mt-16 sm:mt-20">
         <Suspense fallback={<ResourcesPlaceholder />}>
           {/* @ts-expect-error Server Component */}

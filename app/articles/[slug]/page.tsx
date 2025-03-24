@@ -187,6 +187,7 @@ export default async function Page({
 
   return (
     <Container className="mt-16 lg:mt-32">
+      
       <ArticlePage
         article={article}
         previousArticle={previousArticle}

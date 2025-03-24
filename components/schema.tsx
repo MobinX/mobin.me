@@ -26,7 +26,122 @@ const FaqjsonLd: WithContext<FAQPage> = {
     dateModified: "2023-12-28",
   };
 
-  export const FaqScript = () =>{
+const MyselfjsonLd: WithContext<Person> = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Md. Mobin Chowdhury",
+  description: "A highly motivated and aspiring AI researcher with a strong background in deep learning, quantum computing, and web development. Currently an undergraduate physics student at the University of Dhaka.",
+  jobTitle: "Undergraduate Student",
+  image: "https://mobinx.vercel.app/images/profile.png",
+  gender: "Male",
+  alternateName: "Mobin Chowdhury",
+  callSign: "Mobin",
+  additionalName: "Md. Mobin",
+  familyName: "Chowdhury",
+  givenName: "Mobin",
+  height: "1.75m",
+  homeLocation: {
+    "@type": "Place",
+    name: "Teghoria, Rajanagar, Munshiganj, Dhaka, Bangladesh",
+    address: {
+      "@type": "PostalAddress", 
+      addressLocality: "Munshiganj",
+      addressRegion: "Dhaka",
+      addressCountry: "Bangladesh",
+      postalCode: "1219"
+    }
+  },
+  birthPlace: {
+    "@type": "Place",
+    name: "Dhaka, Bangladesh"
+  },
+  nationality: {
+    "@type": "Country",
+    name: "Bangladesh"
+  },
+  email: "mobin0219@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Khilgaon",
+    addressRegion: "Dhaka",
+    addressCountry: "Bangladesh",
+    postalCode: "1219"
+  },
+  affiliation: {
+    "@type": "Organization",
+    name: "Department of Physics, University of Dhaka",
+    url: "https://www.du.ac.bd/body/PHY"
+  },
+  alumniOf: [
+    {
+      "@type": "EducationalOrganization",
+      name: "National Ideal College",
+      url: "https://deb132078.dhakaeducationboard.gov.bd/"
+    },
+    {
+      "@type": "EducationalOrganization",
+      name: "National Ideal School",
+      url: "https://deb132078.dhakaeducationboard.gov.bd/"
+    }
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "Department of Physics, University of Dhaka",
+    url: "https://www.du.ac.bd/body/PHY"
+  },
+  knowsAbout: [
+    "Artificial Intelligence",
+    "Deep Learning",
+    "Quantum Computing",
+    "Quantum AI",
+    "Web Development",
+    "PyTorch",
+    "Large Language Models"
+  ],
+  skills: [
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "PyTorch",
+    "TensorFlow",
+    "Quantum Computing",
+    "Next.js",
+    "Mathematics",
+    "Physics",
+    "Research",
+    "Data Analysis"
+  ],
+  sameAs: [
+    "https://scholar.google.com/citations?user=-ODlgXgAAAAJ",
+    "https://github.com/MobinX",
+    "https://www.linkedin.com/in/mobinx/",
+    "https://x.com/mobincx"
+  ],
+  url: "https://mobinx.vercel.app",
+  memberOf: [
+    {
+      "@type": "Organization",
+      name: "International Physics Students Association",
+      url: "https://example.org/ipsa"
+    },
+    {
+      "@type": "Organization",
+      name: "AI Research Group",
+      url: "https://example.org/ai-research"
+    }
+  ],
+  hasOccupation: {
+    "@type": "Occupation",
+    name: "student",
+    description: "Undergraduate student in Physics",
+    sameAs: "https://www.du.ac.bd/body/PHY",
+    occupationalCategory: "Student",
+
+  }
+};
+
+export const FaqScript = () =>{
     return <Script
     id="faq-schema"
     type="application/ld+json"
@@ -34,5 +149,15 @@ const FaqjsonLd: WithContext<FAQPage> = {
       __html: JSON.stringify(FaqjsonLd),
     }}
   />
-  }
+}
+
+export const MySelfScript = () => {
+  return <Script
+    id="person-schema"
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(MyselfjsonLd),
+    }}
+  />
+}
 
