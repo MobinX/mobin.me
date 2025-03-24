@@ -159,7 +159,9 @@ export default function RootLayout({
 }) {
   return (
     <html className="h-full antialiased" lang="en">
-      <head />
+      <head>
+      <meta name="google-site-verification" content="KlDvnLUZlRCfQteKEmVPNP6kaPOpcrmFYq6lYfzMrFY" />
+      </head>
       <MySelfScript />
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black min-h-screen">
         <ClientThemeProvider>
