@@ -12,7 +12,6 @@ import About from "./About";
 import Server from "./Server";
 import React from "react";
 import { TimelineComponent } from "./TimeLine";
-import Skills from "./Skills";
 
 export default async function Home(): Promise<JSX.Element> {
   if (fs.existsSync("public")) {
@@ -38,7 +37,10 @@ export default async function Home(): Promise<JSX.Element> {
         <Server component="Experiences" />
       </Suspense>
 
-      <Skills />
+      <Suspense>
+        {/* @ts-expect-error Server Component */}
+        <Server component="Skills" />
+      </Suspense>
 
       <Suspense fallback={<PublicationsPlaceholder />}>
         {/* @ts-expect-error Server Component */}

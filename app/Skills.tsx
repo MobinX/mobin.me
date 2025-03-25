@@ -1,6 +1,4 @@
-"use client";
 import { Container } from "components/Container";
-import { useEffect, useState } from "react";
 
 // Define the Skills type
 interface Skill {
@@ -23,29 +21,11 @@ const progressColors = [
   "bg-cyan-500",
 ];
 
-export default function Skills() {
-  const [skills, setSkills] = useState<Skill[]>([]);
-  const [categories, setCategories] = useState<string[]>([]);
-
-  useEffect(() => {
-    // Fetch skills data
-    const fetchSkills = async () => {
-      try {
-        const response = await fetch('/content/skills.json');
-        const data = await response.json();
-        setSkills(data);
-        
-        // Extract unique categories
-        const uniqueCategories = Array.from(
-          new Set(data.map((skill: Skill) => skill.category))
-        );
-        setCategories(uniqueCategories as string[]);
-      } catch (error) {
-        console.error('Failed to fetch skills:', error);
-      }
-    };
-    fetchSkills();
-  }, []);
+export default function Skills({ skills }: { skills: Skill[] }) {
+  // Get unique categories from skills
+  const categories = Array.from(
+    new Set(skills.map((skill: Skill) => skill.category))
+  );
 
   // Get color for a skill based on its index
   const getSkillColor = (index: number) => {

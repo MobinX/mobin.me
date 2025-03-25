@@ -8,6 +8,7 @@ import Experiences from "./Experiences";
 import LifeEvents from "./LifeEvents";
 import Publications from "./Publications";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 // get educations from the local file
 async function getEducations(): Promise<any> {
@@ -93,6 +94,21 @@ async function getProjects(): Promise<any> {
   return projects;
 }
 
+// get skills from the local file
+async function getSkills(): Promise<any> {
+  if (fs.existsSync("public/content/skills.json")) {
+    const res = await ps.readFile("public/content/skills.json", "utf-8");
+    const skills: any = JSON.parse(res);
+    return skills;
+  }
+  const skills = fetch(`${server}/content/skills.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      return data;
+    });
+  return skills;
+}
+
 // get sorted articles from the contentlayer
 async function getSortedArticles(): Promise<any> {
   let articles = await allArticles;
@@ -125,6 +141,8 @@ export default async function Server({
       return <LifeEvents lifeEvents={await getLifeEvents()} />;
     case "Projects":
       return <Projects />;
+    case "Skills":
+      return <Skills skills={await getSkills()} />;
     default:
       return <></>;
   }
