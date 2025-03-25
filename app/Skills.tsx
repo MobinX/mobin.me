@@ -62,7 +62,7 @@ export default function Skills({ skills }: { skills: Skill[] }) {
                       <div className="mb-3 flex items-center">
                         {skill.logo && (
                           <div className="mr-2 flex-shrink-0">
-                            <Image 
+                            <img 
                               src={`/images/${skill.logo}`} 
                               alt={`${skill.name} logo`} 
                               width={24} 
