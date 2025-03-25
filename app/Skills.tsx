@@ -41,7 +41,7 @@ export default function Skills({ skills }: { skills: Skill[] }) {
           Skills
         </h2>
         <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
-          A collection of technical skills I've acquired over the years.
+          A collection of technical skills I&apos;ve acquired over the years.
         </p>
         <div className="mt-10 space-y-10">
           {categories.map((category, categoryIndex) => (
