@@ -34,7 +34,7 @@ export default function EventList({ searchTerm, selectedYear }:{
       {filteredGroups.length > 0 ? (
         filteredGroups.map((group) => (
           <Link 
-            href={`/event/${group.slug}`} 
+            href={`/events/${group.slug}`} 
             key={group.id}
             className="group"
           >

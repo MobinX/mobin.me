@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${event.data[0].title} | Events - Md. Mobin Chowdhury`,
       description: event.data[0].content,
-      url: `${server}/event/${params.slug}`,
+      url: `${server}/events/${params.slug}`,
       type: "article",
       siteName: "Md. Mobin Chowdhury | Personal Website",
       images: [
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
     },
     alternates: {
-      canonical: `${server}/event/${params.slug}`,
+      canonical: `${server}/events/${params.slug}`,
       types: {
         "application/rss+xml": `${server}/feed.xml`,
       },
@@ -144,7 +144,7 @@ export default function EventPage({ params }: Props) {
               <div className="flex justify-between gap-4">
                 {getPreviousEvent(event) && (
                   <Link
-                    href={`/event/${getPreviousEvent(event)?.slug}`}
+                    href={`/events/${getPreviousEvent(event)?.slug}`}
                     className="flex items-center text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300"
                   >
                     <svg
@@ -166,7 +166,7 @@ export default function EventPage({ params }: Props) {
                 
                 {getNextEvent(event) && (
                   <Link
-                    href={`/event/${getNextEvent(event)?.slug}`}
+                    href={`/events/${getNextEvent(event)?.slug}`}
                     className="flex items-center text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300 ml-auto"
                   >
                     Next Event
