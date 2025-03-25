@@ -1,0 +1,77 @@
+[
+    {
+        "category": "Machine Learning",
+        "name": "PyTorch",
+        "percentage": 75
+    },
+    {
+        "category": "Machine Learning",
+        "name": "Hugging Face",
+        "percentage": 70
+    },
+    {
+        "category": "Data Science",
+        "name": "NumPy",
+        "percentage": 80
+    },
+    {
+        "category": "Programming Languages",
+        "name": "JavaScript",
+        "percentage": 90
+    },
+    {
+        "category": "Programming Languages",
+        "name": "Python",
+        "percentage": 85
+    },
+    {
+        "category": "Programming Languages",
+        "name": "TypeScript",
+        "percentage": 80
+    },
+    {
+        "category": "Frontend",
+        "name": "React",
+        "percentage": 90
+    },
+    {
+        "category": "Frontend",
+        "name": "HTML5/CSS3",
+        "percentage": 95
+    },
+    {
+        "category": "Backend",
+        "name": "Node.js",
+        "percentage": 85
+    },
+    {
+        "category": "Backend",
+        "name": "Express",
+        "percentage": 80
+    },
+    {
+        "category": "Database",
+        "name": "MongoDB",
+        "percentage": 75
+    },
+    {
+        "category": "Database",
+        "name": "PostgreSQL",
+        "percentage": 70
+    },
+    {
+        "category": "DevOps",
+        "name": "Docker",
+        "percentage": 65
+    },
+    {
+        "category": "DevOps",
+        "name": "Git",
+        "percentage": 90
+    },
+    {
+        "category": "Design",
+        "name": "Figma",
+        "percentage": 60
+    }
+]
