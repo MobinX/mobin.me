@@ -4,6 +4,7 @@ import EducationsPlaceholder from "components/skeleton/EducationsPlaceholder";
 import ExperiencesPlaceholder from "components/skeleton/ExperiencesPlaceholder";
 import LifeEventsPlaceholder from "components/skeleton/LifeEventsPlaceholder";
 import PublicationsPlaceholder from "components/skeleton/PublicationsPlaceholder";
+import ProjectsPlaceholder from "components/skeleton/ProjectsPlaceholder";
 import fs from "fs";
 import { Suspense } from "react";
 import generateRss from "utils/generate-rss";
@@ -42,6 +43,11 @@ export default async function Home(): Promise<JSX.Element> {
         <Server component="Publications" />
       </Suspense>
 
+      <Suspense fallback={<ProjectsPlaceholder />}>
+        {/* @ts-expect-error Server Component */}
+        <Server component="Projects" />
+      </Suspense>
+
       {/* <Miscellaneous /> */}
 
       <TimelineComponent />
@@ -52,9 +58,6 @@ export default async function Home(): Promise<JSX.Element> {
       </Suspense>
 
       {/* <Calendar /> */}
-
-
-    
     </>
   );
 }

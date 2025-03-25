@@ -1,16 +1,5 @@
 [
- {
-    "title": "Md. Mobin Chowdhury | Personal Website",
-    "description": "My personal website, built with Next.js, Tailwind CSS, Contentlayer, and 🚀 deployed on Vercel 🔼",
-    "link": {
-      "href": "https://github.com/mobinx/mobin.me",
-      "label": "mobin.me"
-    },
-    "logo": {
-      "src": "user.png",
-      "alt": "mobin.me"
-    }
-  },
+ 
   {
     "title": "EasyMeet-js: A TypeScript library for WebRTC",
     "description": "A TypeScript library simplifying WebRTC implementation for audio/video calls and P2P file transfers in React APP. 🎥💬",

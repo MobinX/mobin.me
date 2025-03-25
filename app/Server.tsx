@@ -7,6 +7,7 @@ import Educations from "./Educations";
 import Experiences from "./Experiences";
 import LifeEvents from "./LifeEvents";
 import Publications from "./Publications";
+import Projects from "./Projects";
 
 // get educations from the local file
 async function getEducations(): Promise<any> {
@@ -75,6 +76,23 @@ async function getLifeEvents(): Promise<any> {
   return lifeEvents;
 }
 
+// get projects from the local file
+async function getProjects(): Promise<any> {
+  if (fs.existsSync("public/content/projects.json")) {
+    const res = await ps.readFile("public/content/projects.json", "utf-8");
+    const projects: Project[] = JSON.parse(res);
+    return projects.slice(0, 3); // Return only top 3 projects
+  }
+
+  const projects = fetch(`${server}/content/projects.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      return data.slice(0, 3);
+    });
+
+  return projects;
+}
+
 // get sorted articles from the contentlayer
 async function getSortedArticles(): Promise<any> {
   let articles = await allArticles;
@@ -105,6 +123,8 @@ export default async function Server({
       return <Articles articles={await getSortedArticles()} />;
     case "LifeEvents":
       return <LifeEvents lifeEvents={await getLifeEvents()} />;
+    case "Projects":
+      return <Projects />;
     default:
       return <></>;
   }
