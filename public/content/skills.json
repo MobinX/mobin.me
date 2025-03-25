@@ -36,7 +36,17 @@
     },
     {
         "category": "Frontend",
+        "name": "Next.js",
+        "percentage": 98
+    },
+    {
+        "category": "Frontend",
         "name": "HTML5/CSS3",
+        "percentage": 95
+    },
+    {
+        "category": "Frontend",
+        "name": "Tailwind CSS",
         "percentage": 95
     },
     {
