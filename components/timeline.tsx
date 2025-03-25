@@ -15,8 +15,10 @@ interface TimelineItem {
 }
 
 interface TimelineGroup {
+    id: string;
     date: string | Date;
     data: TimelineItem[];
+    slug: string;
 }
 
 export interface TimelineProps {
