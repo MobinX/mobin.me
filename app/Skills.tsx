@@ -1,10 +1,12 @@
 import { Container } from "components/Container";
+import Image from "next/image";
 
 // Define the Skills type
 interface Skill {
   category: string;
   name: string;
   percentage: number;
+  logo: string;
 }
 
 // Array of colors for the progress bars
@@ -57,7 +59,18 @@ export default function Skills({ skills }: { skills: Skill[] }) {
                       key={skillIndex}
                       className="rounded-lg border border-zinc-100 p-6 dark:border-zinc-700/40 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition"
                     >
-                      <div className="mb-3">
+                      <div className="mb-3 flex items-center">
+                        {skill.logo && (
+                          <div className="mr-2 flex-shrink-0">
+                            <Image 
+                              src={`/images/${skill.logo}`} 
+                              alt={`${skill.name} logo`} 
+                              width={24} 
+                              height={24} 
+                              className="h-6 w-auto object-contain"
+                            />
+                          </div>
+                        )}
                         <h4 className="text-zinc-800 dark:text-zinc-100 font-medium">
                           {skill.name}
                         </h4>

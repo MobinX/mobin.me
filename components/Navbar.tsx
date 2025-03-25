@@ -1,0 +1,9 @@
+// ...existing code...
+
+// In the navigation items array or list, add the contact link
+const navigation = [
+  // ...existing code...
+  { name: 'Contact', href: '/contact' },
+];
+
+// ...existing code...

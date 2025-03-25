@@ -9,6 +9,7 @@ const navigations = [
   // { href: "/snippets", label: "Snippets" },
   { href: "/events", label: "Events" },
   { href: "/resources", label: "Resources" },
+  { href: "/contact", label: "Contact" },
 ];
 
 function NavLink({
