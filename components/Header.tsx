@@ -16,6 +16,7 @@ const navigations = [
   // { href: "/courses", label: "Courses" },
   // { href: "/snippets", label: "Snippets" },
   { href: "/resources", label: "Resources" },
+  { href: "/events", label: "Events" },
   { href: "/articles", label: "Posts" },
 ];
 
