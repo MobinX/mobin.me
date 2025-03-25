@@ -36,7 +36,7 @@ export default function Skills({ skills }: { skills: Skill[] }) {
 
   return (
     <Container className="mt-24 md:mt-28">
-      <div className="mx-auto max-w-3xl">
+      <div className="max-w-3xl">
         <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
           Skills
         </h2>
