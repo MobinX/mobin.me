@@ -1,0 +1,1033 @@
+// example: IDataObject
+const returnData: IDataObject[] = [];
+
+// example: NodeOperationError
+if (Object.keys(updateFields).length) {
+							Object.assign(body, adjustPersonPayload(updateFields));
+						} else {
+							throw new NodeOperationError(
+								this.getNode(),
+								`Please enter at least one field to update for the ${resource}.`,
+								{ itemIndex: i },
+							);
+						}
+
+// example: IHttpRequestMethods
+actionNetworkApiRequest.call(
+			this,
+			method as IHttpRequestMethods,
+			endpoint,
+			body,
+			qs,
+		)
+
+// example: ILoadOptionsFunctions
+export const resourceLoaders = {
+	async getTags(this: ILoadOptionsFunctions) {
+		const tags = (await loadResource.call(this, 'tags')) as Array<
+			{ name: string } & LinksFieldContainer
+		>;
+
+		return tags.map((tag) => ({ name: tag.name, value: extractId(tag) }));
+	},
+
+	async getTaggings(this: ILoadOptionsFunctions) {
+		const tagId = this.getNodeParameter('tagId', 0);
+		const endpoint = `/tags/${tagId}/taggings`;
+
+		// two-resource endpoint, so direct call
+		const taggings = (await handleListing.call(
+			this,
+			'GET',
+			endpoint,
+			{},
+			{},
+			{ returnAll: true },
+		)) as LinksFieldContainer[];
+
+		return taggings.map((tagging) => {
+			const taggingId = extractId(tagging);
+
+			return {
+				name: taggingId,
+				value: taggingId,
+			};
+		});
+	},
+};
+
+// example: IRequestOptions
+const options: IRequestOptions = {
+		method,
+		body,
+		qs,
+		uri: `https://actionnetwork.org/api/v2${endpoint}`,
+		json: true,
+	};
+
+// example: INodeProperties
+export const attendanceOperations: INodeProperties[] = [
+	{
+		displayName: 'Operation',
+		name: 'operation',
+		type: 'options',
+		noDataExpression: true,
+		displayOptions: {
+			show: {
+				resource: ['attendance'],
+			},
+		},
+		options: [
+			{
+				name: 'Create',
+				value: 'create',
+				action: 'Create an attendance',
+			},
+			{
+				name: 'Get',
+				value: 'get',
+				action: 'Get an attendance',
+			},
+			{
+				name: 'Get Many',
+				value: 'getAll',
+				action: 'Get many attendances',
+			},
+		],
+		default: 'create',
+	},
+];
+
+// example: INodePropertyOptions
+const returnData: INodePropertyOptions[] = [];
+
+// example: JsonObject
+if (responseData.success === false) {
+			throw new NodeApiError(this.getNode(), responseData as JsonObject);
+		}
+
+// example: NodeApiError
+if (responseData.success === false) {
+			throw new NodeApiError(this.getNode(), responseData as JsonObject);
+		}
+
+// example: BINARY_ENCODING
+Buffer.from(apiKey).toString(BINARY_ENCODING)
+
+// example: jsonParse
+jsonParse(filterJsonRules)
+
+// example: INodeTypeBaseDescription
+const baseDescription: INodeTypeBaseDescription = {
+			displayName: 'Airtable',
+			name: 'airtable',
+			icon: 'file:airtable.svg',
+			group: ['input'],
+			description: 'Read, update, write and delete data from Airtable',
+			defaultVersion: 2.1,
+		};
+
+// example: IVersionedNodeType
+const nodeVersions: IVersionedNodeType['nodeVersions'] = {
+			1: new AirtableV1(baseDescription),
+			2: new AirtableV2(baseDescription),
+			2.1: new AirtableV2(baseDescription),
+		};
+
+// example: WorkflowTestData
+const testData: WorkflowTestData = {
+		description: 'List Airtable Records',
+		input: {
+			workflowData: testHarness.readWorkflowJSON('workflow.json'),
+		},
+		output: {
+			nodeData: {
+				Airtable: [[{ json: record }]],
+			},
+		},
+	};
+
+// example: IGetNodeParameterOptions
+const fakeExecuteFunction = {
+		getInputData() {
+			return [{ json: {} }];
+		},
+		getNodeParameter(
+			parameterName: string,
+			_itemIndex: number,
+			fallbackValue?: IDataObject | undefined,
+			options?: IGetNodeParameterOptions | undefined,
+		) {
+			const parameter = options?.extractValue ? `${parameterName}.value` : parameterName;
+			return get(nodeParameters, parameter, fallbackValue);
+		},
+		getNode() {
+			return node;
+		},
+		helpers: { constructExecutionMetaData },
+		continueOnFail: () => false,
+	} as unknown as IExecuteFunctions;
+
+// example: INode
+export const node: INode = {
+	id: '11',
+	name: 'Airtable node',
+	typeVersion: 2,
+	type: 'n8n-nodes-base.airtable',
+	position: [42, 42],
+	parameters: {
+		operation: 'create',
+	},
+};
+
+// example: IBinaryKeyData
+Object.keys(element.binary as IBinaryKeyData)
+
+// example: ApplicationError
+if (!matches?.length) {
+			throw new ApplicationError('No records match provided keys', { level: 'warning' });
+		}
+
+// example: INodeListSearchItems
+const results: INodeListSearchItems[] = [];
+
+// example: FieldType
+let type: FieldType = 'string';
+
+// example: ResourceMapperField
+const fields: ResourceMapperField[] = [];
+
+// example: IBinaryData
+let data: IBinaryData | undefined;
+
+// example: ICredentialDataDecryptedObject
+const credentials = credential.data as ICredentialDataDecryptedObject;
+
+// example: IDeferredPromise
+let responsePromise: IDeferredPromise<IRun> | undefined = undefined;
+
+// example: IRun
+let responsePromise: IDeferredPromise<IRun> | undefined = undefined;
+
+// example: deepCopy
+deepCopy(data.body.content)
+
+// example: NodeExecutionWithMetadata
+returnData.push(...(responseData as NodeExecutionWithMetadata[]))
+
+// example: updateDisplayOptions
+updateDisplayOptions(displayOptions, properties)
+
+// example: NodeParameterValue
+let value = item.value as NodeParameterValue;
+
+// example: assert
+assert(
+				typeof attribute === 'object' && !Array.isArray(attribute) && attribute !== null,
+				'Attribute must be an object',
+			)
+
+// example: INodeParameters
+(
+					this.getNodeParameter('options.messageAttributes.string', i, []) as INodeParameters[]
+				).forEach((attribute) => {
+					attributeCount++;
+					params.push(`MessageAttribute.${attributeCount}.Name=${attribute.name}`);
+					params.push(`MessageAttribute.${attributeCount}.Value.StringValue=${attribute.value}`);
+					params.push(`MessageAttribute.${attributeCount}.Value.DataType=String`);
+				})
+
+// example: IOAuth2Options
+const oAuth2Options: IOAuth2Options = {
+			includeCredentialsOnRefreshOnBody: true,
+		};
+
+// example: GenericValue
+const { body } = requestOptions as GenericValue as JsonObject;
+
+// example: CodeExecutionMode
+const nodeMode = this.getNodeParameter('mode', 0) as CodeExecutionMode;
+
+// example: CodeNodeEditorLanguage
+const language: CodeNodeEditorLanguage =
+			node.typeVersion === 2
+				? (this.getNodeParameter('language', 0) as CodeNodeEditorLanguage)
+				: 'javaScript';
+
+// example: createResultOk
+createResultOk([{ json: { item: i++ } }])
+
+// example: TriggerTime
+const triggerTimes = this.getNodeParameter('triggerTimes') as unknown as {
+			item: TriggerTime[];
+		};
+
+// example: toCronExpression
+(triggerTimes.item || []).map(toCronExpression)
+
+// example: SEND_AND_WAIT_OPERATION
+return SEND_AND_WAIT_OPERATION;
+
+// example: sleep
+sleep(resetAfter ?? 1000)
+
+// example: TriggerCloseError
+const closeFunction = async () => {
+			closeFunctionWasCalled = true;
+			if (reconnectionInterval) {
+				clearInterval(reconnectionInterval);
+			}
+			try {
+				if (connection.closeBox) await connection.closeBox(false);
+				connection.end();
+			} catch (error) {
+				throw new TriggerCloseError(this.getNode(), { cause: error as Error, level: 'warning' });
+			}
+		};
+
+// example: AssignmentCollectionValue
+describe('Test Evaluation Node for Set Metrics', () => {
+		const nodeTypes = mock<INodeTypes>();
+		const evaluationMetricsNode = new Evaluation();
+
+		let mockExecuteFunction: IExecuteFunctions;
+
+		function getMockExecuteFunction(metrics: AssignmentCollectionValue['assignments']) {
+			return {
+				getInputData: jest.fn().mockReturnValue([{}]),
+
+				getNodeParameter: jest.fn((param: string, _: number) => {
+					if (param === 'metrics') {
+						return { assignments: metrics };
+					}
+					if (param === 'operation') {
+						return 'setMetrics';
+					}
+					return param;
+				}),
+
+				getNode: jest.fn().mockReturnValue({
+					typeVersion: 1,
+				}),
+			} as unknown as IExecuteFunctions;
+		}
+
+		beforeAll(() => {
+			mockExecuteFunction = getMockExecuteFunction([
+				{
+					id: '1',
+					name: 'Accuracy',
+					value: 0.95,
+					type: 'number',
+				},
+				{
+					id: '2',
+					name: 'Latency',
+					value: 100,
+					type: 'number',
+				},
+			]);
+			nodeTypes.getByName.mockReturnValue(evaluationMetricsNode);
+			jest.clearAllMocks();
+		});
+
+		describe('execute', () => {
+			it('should output the defined metrics', async () => {
+				const result = await evaluationMetricsNode.execute.call(mockExecuteFunction);
+
+				expect(result).toHaveLength(1);
+				expect(result[0]).toHaveLength(1);
+
+				const outputItem = result[0][0].json;
+				expect(outputItem).toEqual({
+					Accuracy: 0.95,
+					Latency: 100,
+				});
+			});
+
+			it('should handle no metrics defined', async () => {
+				mockExecuteFunction = getMockExecuteFunction([]);
+				const result = await evaluationMetricsNode.execute.call(mockExecuteFunction);
+
+				expect(result).toHaveLength(1);
+				expect(result[0]).toHaveLength(1);
+				expect(result[0][0].json).toEqual({});
+			});
+
+			it('should convert string values to numbers', async () => {
+				const mockExecuteWithStringValues = getMockExecuteFunction([
+					{
+						id: '1',
+						name: 'Accuracy',
+						value: '0.95',
+						type: 'number',
+					},
+					{
+						id: '2',
+						name: 'Latency',
+						value: '100',
+						type: 'number',
+					},
+				]);
+
+				const result = await evaluationMetricsNode.execute.call(mockExecuteWithStringValues);
+
+				expect(result).toHaveLength(1);
+				expect(result[0]).toHaveLength(1);
+
+				const outputItem = result[0][0].json;
+				expect(outputItem).toEqual({
+					Accuracy: 0.95,
+					Latency: 100,
+				});
+			});
+
+			it('should throw error for non-numeric string values', async () => {
+				const mockExecuteWithInvalidValue = getMockExecuteFunction([
+					{
+						id: '1',
+						name: 'Accuracy',
+						value: 'not-a-number',
+						type: 'number',
+					},
+				]);
+
+				await expect(
+					evaluationMetricsNode.execute.call(mockExecuteWithInvalidValue),
+				).rejects.toThrow(NodeOperationError);
+			});
+		});
+	})
+
+// example: INodeTypes
+mock<INodeTypes>()
+
+// example: UserError
+if (outputFields.length === 0) {
+		throw new UserError('No outputs to set', {
+			description: 'Add outputs to write back to the Google Sheet using the ‘Add Output’ button',
+		});
+	}
+
+// example: parseErrorMetadata
+parseErrorMetadata(error)
+
+// example: ExecuteWorkflowData
+const executionResult: ExecuteWorkflowData = await this.executeWorkflow(
+							workflowInfo,
+							[items[i]],
+							undefined,
+							{
+								parentExecution: {
+									executionId: workflowProxy.$execution.id,
+									workflowId: workflowProxy.$workflow.id,
+								},
+							},
+						);
+
+// example: IExecuteWorkflowInfo
+const workflowInfo: IExecuteWorkflowInfo = {};
+
+// example: INodeParameterResourceLocator
+const { value } = this.getNodeParameter(
+				'workflowId',
+				itemIndex,
+				{},
+			) as INodeParameterResourceLocator;
+
+// example: FieldValueOption
+const mockNewParams: {
+			fields: FieldValueOption[];
+			noFieldsMessage?: string;
+		} = {
+			fields: [
+				{ name: 'value1', type: 'string' },
+				{ name: 'value2', type: 'number' },
+				{ name: 'foo', type: 'string' },
+			],
+		};
+
+// example: FormFieldsParameter
+let fields: FormFieldsParameter = [];
+
+// example: NodeTypeAndVersion
+const trigger = parentNodes.find(
+			(node) => node.type === 'n8n-nodes-base.formTrigger',
+		) as NodeTypeAndVersion;
+
+// example: FORM_NODE_TYPE
+childNodes.some((node) => node.type === FORM_NODE_TYPE)
+
+// example: FORM_TRIGGER_NODE_TYPE
+parentNodes.some((node) => node.type === FORM_TRIGGER_NODE_TYPE)
+
+// example: tryToParseJsonToFormFields
+tryToParseJsonToFormFields(resolveRawData(context, jsonOutput))
+
+// example: OperationalError
+if (!binaryNode) {
+		throw new OperationalError(`No binary data with field ${inputDataFieldName} found.`);
+	}
+
+// example: MultiPartFormData
+const mockFile: Partial<MultiPartFormData.File> = {
+			filepath: '/tmp/uploaded-file',
+			originalFilename: 'test.txt',
+			mimetype: 'text/plain',
+			size: 1024,
+		};
+
+// example: WAIT_NODE_TYPE
+nodes.some(
+		(n) =>
+			n.type === FORM_NODE_TYPE || (n.type === WAIT_NODE_TYPE && n.parameters?.resume === 'form'),
+	)
+
+// example: FORM_TRIGGER_PATH_IDENTIFIER
+const descriptionV1: INodeTypeDescription = {
+	displayName: 'n8n Form Trigger',
+	name: 'formTrigger',
+	icon: 'file:form.svg',
+	group: ['trigger'],
+	version: 1,
+	description: 'Generate webforms in n8n and pass their responses to the workflow',
+	defaults: {
+		name: 'n8n Form Trigger',
+	},
+
+	inputs: [],
+	outputs: [NodeConnectionTypes.Main],
+	webhooks: [
+		{
+			name: 'setup',
+			httpMethod: 'GET',
+			responseMode: 'onReceived',
+			isFullPath: true,
+			path: `={{$parameter["path"]}}/${FORM_TRIGGER_PATH_IDENTIFIER}`,
+			ndvHideUrl: true,
+		},
+		{
+			name: 'default',
+			httpMethod: 'POST',
+			responseMode: '={{$parameter["responseMode"]}}',
+			responseData: '={{$parameter["responseMode"] === "lastNode" ? "noData" : undefined}}',
+			isFullPath: true,
+			path: `={{$parameter["path"]}}/${FORM_TRIGGER_PATH_IDENTIFIER}`,
+			ndvHideMethod: true,
+		},
+	],
+	eventTriggerDescription: 'Waiting for you to submit the form',
+	activationMessage: 'You can now make calls to your production Form URL.',
+	triggerPanel: formTriggerPanel,
+	properties: [
+		webhookPath,
+		formTitle,
+		formDescription,
+		formFields,
+		formRespondMode,
+		{
+			displayName: 'Options',
+			name: 'options',
+			type: 'collection',
+			placeholder: 'Add option',
+			default: {},
+			displayOptions: {
+				hide: {
+					responseMode: ['responseNode'],
+				},
+			},
+			options: [
+				{
+					displayName: 'Form Submitted Text',
+					name: 'formSubmittedText',
+					description: 'The text displayed to users after they filled the form',
+					type: 'string',
+					default: 'Your response has been recorded',
+				},
+			],
+		},
+	],
+};
+
+// example: ADD_FORM_NOTICE
+const descriptionV2: INodeTypeDescription = {
+	displayName: 'n8n Form Trigger',
+	name: 'formTrigger',
+	icon: 'file:form.svg',
+	group: ['trigger'],
+	version: [2, 2.1, 2.2],
+	description: 'Generate webforms in n8n and pass their responses to the workflow',
+	defaults: {
+		name: 'On form submission',
+	},
+
+	inputs: [],
+	outputs: [NodeConnectionTypes.Main],
+	webhooks: [
+		{
+			name: 'setup',
+			httpMethod: 'GET',
+			responseMode: 'onReceived',
+			isFullPath: true,
+			path: '={{ $parameter["path"] || $parameter["options"]?.path || $webhookId }}',
+			ndvHideUrl: true,
+			nodeType: 'form',
+		},
+		{
+			name: 'default',
+			httpMethod: 'POST',
+			responseMode: '={{$parameter["responseMode"]}}',
+			responseData: '={{$parameter["responseMode"] === "lastNode" ? "noData" : undefined}}',
+			isFullPath: true,
+			path: '={{ $parameter["path"] || $parameter["options"]?.path || $webhookId }}',
+			ndvHideMethod: true,
+			nodeType: 'form',
+		},
+	],
+	eventTriggerDescription: 'Waiting for you to submit the form',
+	activationMessage: 'You can now make calls to your production Form URL.',
+	triggerPanel: formTriggerPanel,
+	credentials: [
+		{
+			// eslint-disable-next-line n8n-nodes-base/node-class-description-credentials-name-unsuffixed
+			name: 'httpBasicAuth',
+			required: true,
+			displayOptions: {
+				show: {
+					[FORM_TRIGGER_AUTHENTICATION_PROPERTY]: ['basicAuth'],
+				},
+			},
+		},
+	],
+	properties: [
+		{
+			displayName: 'Authentication',
+			name: FORM_TRIGGER_AUTHENTICATION_PROPERTY,
+			type: 'options',
+			options: [
+				{
+					name: 'Basic Auth',
+					value: 'basicAuth',
+				},
+				{
+					name: 'None',
+					value: 'none',
+				},
+			],
+			default: 'none',
+		},
+		{ ...webhookPath, displayOptions: { show: { '@version': [{ _cnd: { lte: 2.1 } }] } } },
+		formTitle,
+		formDescription,
+		formFields,
+		{ ...formRespondMode, displayOptions: { show: { '@version': [{ _cnd: { lte: 2.1 } }] } } },
+		{
+			...formRespondMode,
+			options: (formRespondMode.options as INodePropertyOptions[])?.filter(
+				(option) => option.value !== 'responseNode',
+			),
+			displayOptions: { show: { '@version': [{ _cnd: { gte: 2.2 } }] } },
+		},
+		{
+			displayName:
+				"In the 'Respond to Webhook' node, select 'Respond With JSON' and set the <strong>formSubmittedText</strong> key to display a custom response in the form, or the <strong>redirectURL</strong> key to redirect users to a URL",
+			name: 'formNotice',
+			type: 'notice',
+			displayOptions: {
+				show: { responseMode: ['responseNode'] },
+			},
+			default: '',
+		},
+		// notice would be shown if no Form node was connected to trigger
+		{
+			displayName: 'Build multi-step forms by adding a form page later in your workflow',
+			name: ADD_FORM_NOTICE,
+			type: 'notice',
+			default: '',
+		},
+		{
+			displayName: 'Options',
+			name: 'options',
+			type: 'collection',
+			placeholder: 'Add option',
+			default: {},
+			options: [
+				appendAttributionToForm,
+				{
+					displayName: 'Button Label',
+					description: 'The label of the submit button in the form',
+					name: 'buttonLabel',
+					type: 'string',
+					default: 'Submit',
+				},
+				{
+					...webhookPath,
+					required: false,
+					displayOptions: { show: { '@version': [{ _cnd: { gte: 2.2 } }] } },
+				},
+				{
+					...respondWithOptions,
+					displayOptions: {
+						hide: {
+							'/responseMode': ['responseNode'],
+						},
+					},
+				},
+				{
+					displayName: 'Ignore Bots',
+					name: 'ignoreBots',
+					type: 'boolean',
+					default: false,
+					description: 'Whether to ignore requests from bots like link previewers and web crawlers',
+				},
+				{
+					...useWorkflowTimezone,
+					default: false,
+					description: "Whether to use the workflow timezone in 'submittedAt' field or UTC",
+					displayOptions: {
+						show: {
+							'@version': [2],
+						},
+					},
+				},
+				{
+					...useWorkflowTimezone,
+					default: true,
+					description: "Whether to use the workflow timezone in 'submittedAt' field or UTC",
+					displayOptions: {
+						show: {
+							'@version': [{ _cnd: { gt: 2 } }],
+						},
+					},
+				},
+				{
+					displayName: 'Custom Form Styling',
+					name: 'customCss',
+					type: 'string',
+					typeOptions: {
+						rows: 10,
+						editor: 'cssEditor',
+					},
+					displayOptions: {
+						show: {
+							'@version': [{ _cnd: { gt: 2 } }],
+						},
+					},
+					default: cssVariables.trim(),
+					description: 'Override default styling of the public form interface with CSS',
+				},
+			],
+		},
+	],
+};
+
+// example: WAIT_INDEFINITELY
+this.putExecutionToWait(WAIT_INDEFINITELY)
+
+// example: DeclarativeRestApiSettings
+return async function cursorPagination(
+		this: IExecutePaginationFunctions,
+		requestOptions: DeclarativeRestApiSettings.ResultOptions,
+	): Promise<INodeExecutionData[]> {
+		let executions: INodeExecutionData[] = [];
+		let responseData: INodeExecutionData[];
+		let nextCursor: string | undefined = undefined;
+		const returnAll = this.getNodeParameter('returnAll', true) as boolean;
+
+		do {
+			(requestOptions.options.body as IDataObject).cursor = nextCursor;
+			responseData = await this.makeRoutingRequest(requestOptions);
+			const lastItem = responseData[responseData.length - 1].json;
+			nextCursor = (lastItem.records as IDataObject)?.cursor as string | undefined;
+			executions = executions.concat(extractItems(responseData));
+		} while (returnAll && nextCursor);
+
+		return executions;
+	};
+
+// example: IExecutePaginationFunctions
+return async function cursorPagination(
+		this: IExecutePaginationFunctions,
+		requestOptions: DeclarativeRestApiSettings.ResultOptions,
+	): Promise<INodeExecutionData[]> {
+		let executions: INodeExecutionData[] = [];
+		let responseData: INodeExecutionData[];
+		let nextCursor: string | undefined = undefined;
+		const returnAll = this.getNodeParameter('returnAll', true) as boolean;
+
+		do {
+			(requestOptions.options.body as IDataObject).cursor = nextCursor;
+			responseData = await this.makeRoutingRequest(requestOptions);
+			const lastItem = responseData[responseData.length - 1].json;
+			nextCursor = (lastItem.records as IDataObject)?.cursor as string | undefined;
+			executions = executions.concat(extractItems(responseData));
+		} while (returnAll && nextCursor);
+
+		return executions;
+	};
+
+// example: NodeExecutionHint
+const hints: NodeExecutionHint[] = [];
+
+// example: isSafeObjectProperty
+isSafeObjectProperty(key)
+
+// example: IRequestOptionsSimplified
+jsonParse<IRequestOptionsSimplified>(
+						(httpCustomAuth.json as string) || '{}',
+						{ errorMessage: 'Invalid Custom Auth JSON' },
+					)
+
+// example: randomString
+randomString(10)
+
+// example: setSafeObjectProperty
+setSafeObjectProperty(obj, key, redact(value, secrets))
+
+// example: removeCircularRefs
+removeCircularRefs(response.reason as JsonObject)
+
+// example: PaginationOptions
+const paginationData: PaginationOptions = {
+						continue: continueExpression,
+						request: {},
+						requestInterval: pagination.requestInterval,
+					};
+
+// example: ensureError
+ensureError(e)
+
+// example: ResourceMapperValue
+const mapperValue = this.getNodeParameter('columns') as ResourceMapperValue;
+
+// example: PreSendAction
+export const parseAndSetBodyJson = (
+	parameterName: string,
+	setAsBodyProperty?: string,
+): PreSendAction => {
+	return async function (
+		this: IExecuteSingleFunctions,
+		requestOptions: IHttpRequestOptions,
+	): Promise<IHttpRequestOptions> {
+		try {
+			const rawData = this.getNodeParameter(parameterName, '{}') as string;
+			const parsedObject = JSON.parse(rawData);
+
+			// Set the parsed object to either as the request body directly, or as its sub-property
+			if (setAsBodyProperty === undefined) {
+				requestOptions.body = parsedObject;
+			} else {
+				requestOptions.body = Object.assign({}, requestOptions.body, {
+					[setAsBodyProperty]: parsedObject,
+				});
+			}
+		} catch (err) {
+			throw new NodeOperationError(
+				this.getNode(),
+				new Error(`The '${parameterName}' property must be valid JSON, but cannot be parsed`, {
+					cause: err,
+				}),
+			);
+		}
+		return requestOptions;
+	};
+};
+
+// example: IDisplayOptions
+elements.push({
+			displayName: 'Condition',
+			name: 'condition',
+			type: 'options',
+			displayOptions: {
+				show: {
+					type: [type],
+				},
+			} as IDisplayOptions,
+			options: typeConditions[types[type]].map((entry: string) => ({
+				name: capitalCase(entry),
+				value: entry,
+			})),
+			default: '',
+			description: 'The value of the property to filter by',
+		} as INodeProperties)
+
+// example: randomInt
+randomInt(100)
+
+// example: INodePropertyCollection
+export const rabbitDefaultOptions: Array<
+	INodePropertyOptions | INodeProperties | INodePropertyCollection
+> = [
+	{
+		displayName: 'Arguments',
+		name: 'arguments',
+		placeholder: 'Add Argument',
+		description: 'Arguments to add',
+		type: 'fixedCollection',
+		typeOptions: {
+			multipleValues: true,
+		},
+		default: {},
+		options: [
+			{
+				name: 'argument',
+				displayName: 'Argument',
+				values: [
+					{
+						displayName: 'Key',
+						name: 'key',
+						type: 'string',
+						default: '',
+					},
+					{
+						displayName: 'Value',
+						name: 'value',
+						type: 'string',
+						default: '',
+					},
+				],
+			},
+		],
+	},
+	{
+		displayName: 'Headers',
+		name: 'headers',
+		placeholder: 'Add Header',
+		description: 'Headers to add',
+		type: 'fixedCollection',
+		typeOptions: {
+			multipleValues: true,
+		},
+		default: {},
+		options: [
+			{
+				name: 'header',
+				displayName: 'Header',
+				values: [
+					{
+						displayName: 'Key',
+						name: 'key',
+						type: 'string',
+						default: '',
+					},
+					{
+						displayName: 'Value',
+						name: 'value',
+						type: 'string',
+						default: '',
+					},
+				],
+			},
+		],
+	},
+	{
+		displayName: 'Auto Delete Queue',
+		name: 'autoDelete',
+		type: 'boolean',
+		default: false,
+		description: 'Whether the queue will be deleted when the number of consumers drops to zero',
+	},
+	{
+		displayName: 'Assert Exchange',
+		name: 'assertExchange',
+		type: 'boolean',
+		default: true,
+		description: 'Whether to assert the exchange exists before sending',
+	},
+	{
+		displayName: 'Assert Queue',
+		name: 'assertQueue',
+		type: 'boolean',
+		default: true,
+		description: 'Whether to assert the queue exists before sending',
+	},
+	{
+		displayName: 'Durable',
+		name: 'durable',
+		type: 'boolean',
+		default: true,
+		description: 'Whether the queue will survive broker restarts',
+	},
+	{
+		displayName: 'Exclusive',
+		name: 'exclusive',
+		type: 'boolean',
+		default: false,
+		description: 'Whether to scope the queue to the connection',
+	},
+];
+
+// example: IExecuteResponsePromiseData
+let responsePromiseHook: IDeferredPromise<IExecuteResponsePromiseData> | undefined =
+						undefined;
+
+// example: IN8nHttpResponse
+let responseBody: IN8nHttpResponse | Readable;
+
+// example: WEBHOOK_NODE_TYPE
+const WEBHOOK_NODE_TYPES = [
+			WEBHOOK_NODE_TYPE,
+			FORM_TRIGGER_NODE_TYPE,
+			CHAT_TRIGGER_NODE_TYPE,
+			WAIT_NODE_TYPE,
+		];
+
+// example: CHAT_TRIGGER_NODE_TYPE
+const WEBHOOK_NODE_TYPES = [
+			WEBHOOK_NODE_TYPE,
+			FORM_TRIGGER_NODE_TYPE,
+			CHAT_TRIGGER_NODE_TYPE,
+			WAIT_NODE_TYPE,
+		];
+
+// example: CronExpression
+export const toCronExpression = (interval: ScheduleInterval): CronExpression => {
+	if (interval.field === 'cronExpression') return interval.expression;
+	if (interval.field === 'seconds') return `*/${interval.secondsInterval} * * * * *`;
+
+	const randomSecond = randomInt(0, 60);
+	if (interval.field === 'minutes') return `${randomSecond} */${interval.minutesInterval} * * * *`;
+
+	const minute = interval.triggerAtMinute ?? randomInt(0, 60);
+	if (interval.field === 'hours')
+		return `${randomSecond} ${minute} */${interval.hoursInterval} * * *`;
+
+	// Since Cron does not support `*/` for days or weeks, all following expressions trigger more often, but are then filtered by `recurrenceCheck`
+	const hour = interval.triggerAtHour ?? randomInt(0, 24);
+	if (interval.field === 'days') return `${randomSecond} ${minute} ${hour} * * *`;
+	if (interval.field === 'weeks') {
+		const days = interval.triggerAtDay;
+		const daysOfWeek = days.length === 0 ? '*' : days.join(',');
+		return `${randomSecond} ${minute} ${hour} * * ${daysOfWeek}` as CronExpression;
+	}
+
+	const dayOfMonth = interval.triggerAtDayOfMonth ?? randomInt(0, 31);
+	return `${randomSecond} ${minute} ${hour} ${dayOfMonth} */${interval.monthsInterval} *`;
+};
+
+// example: getValueDescription
+getValueDescription(value)
+
+// example: validateFieldType
+validateFieldType(name, value, type)
+
+// example: tryToParseDateTime
+tryToParseDateTime(checkValue)
+
+// example: DeduplicationScope
+const scope = this.getNodeParameter('options.scope', 0, 'node') as DeduplicationScope;
+
+// example: IWebhookDescription
+export const defaultWebhookDescription: IWebhookDescription = {
+	name: 'default',
+	httpMethod: '={{$parameter["httpMethod"] || "GET"}}',
+	isFullPath: true,
+	responseCode: `={{(${getResponseCode})($parameter)}}`,
+	responseMode: '={{$parameter["responseMode"]}}',
+	responseData: `={{(${getResponseData})($parameter)}}`,
+	responseBinaryPropertyName: '={{$parameter["responseBinaryPropertyName"]}}',
+	responseContentType: '={{$parameter["options"]["responseContentType"]}}',
+	responsePropertyName: '={{$parameter["options"]["responsePropertyName"]}}',
+	responseHeaders: '={{$parameter["options"]["responseHeaders"]}}',
+	path: '={{$parameter["path"]}}',
+};
