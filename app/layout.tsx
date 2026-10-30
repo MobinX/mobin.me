@@ -25,19 +25,13 @@ export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   keywords: [
     "Md. Mobin Chowdhury",
-    "Mir Sazzat",
-    "Sazzat",
-    "Sazzat Hossain",
-    "Mir",
-    "Hossain",
-    "Md. Mobin Chowdhury",
-    "Md. Mobin Chowdhury | Personal Website",
-    "Md. Mobin Chowdhury - Personal Website",
-    "Sajjad",
-    "Sajjat",
-    "Hossain",
-    "Sazzad",
-    "Mir Github",
+    "Mobin Chowdhury",
+    "Mobin",
+    "AI researcher",
+    "deep learning",
+    "quantum computing",
+    "large language models",
+    "personal website",
   ],
   authors: [
     {
@@ -116,7 +110,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  manifest: `./site.webmanifest/`,
+  manifest: `/site.webmanifest`,
   twitter: {
     card: "summary_large_image",
     site: "@mobincx",
@@ -132,11 +126,6 @@ export const metadata: Metadata = {
         alt: "Md. Mobin Chowdhury | Personal Website",
       },
     ],
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
   },
   verification: {
     google: "google-site-verification=0",

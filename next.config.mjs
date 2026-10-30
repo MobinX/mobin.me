@@ -6,6 +6,15 @@ export default withContentlayer({
     },
     reactStrictMode: true,
     swcMinify: true,
+    async redirects() {
+        return [
+            {
+                source: '/articles/deep-dive-in-attension-mechanism',
+                destination: '/articles/deep-dive-in-attention-mechanism',
+                permanent: true,
+            },
+        ]
+    },
     experimental: {
         scrollRestoration: true,
         mdxRs: false,

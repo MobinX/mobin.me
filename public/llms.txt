@@ -1,0 +1,37 @@
+# Md. Mobin Chowdhury
+
+> Undergraduate physics student at the University of Dhaka and aspiring AI researcher working on deep learning, quantum computing, and large language models.
+
+Personal academic portfolio: research publications, projects, articles, courses, and code snippets.
+
+## Main pages
+
+- [Home](https://mobinc.vercel.app/): About, education, experience, skills, publications, and projects
+- [Articles](https://mobinc.vercel.app/articles): Blog posts on AI, deep learning, and software engineering
+- [Projects](https://mobinc.vercel.app/projects): Selected software and research projects
+- [Publications](https://mobinc.vercel.app/#publications): Peer-reviewed papers on super-resolution, radio galaxy classification, and test-time adaptation
+- [Courses](https://mobinc.vercel.app/courses): Courses instructed as a research/teaching assistant
+- [Snippets](https://mobinc.vercel.app/snippets): Reusable code snippets
+- [Resources](https://mobinc.vercel.app/resources): Curated learning resources
+- [Events](https://mobinc.vercel.app/events): Talks, achievements, and activities
+
+## Articles
+
+- [React Native vs Flutter: Which to Choose in 2026](https://mobinc.vercel.app/articles/react-native-vs-flutter): Compare architectures, performance, and business trade-offs between the two cross-platform frameworks.
+- [Deep Dive in Attention Mechanism: The Backbone of Modern NLP](https://mobinc.vercel.app/articles/deep-dive-in-attention-mechanism): History, intuition, mathematics, and implementation of the attention algorithms powering modern NLP.
+- [Job and AI: My Thoughts](https://mobinc.vercel.app/articles/my-thoughts-on-job-and-ai): How AI is transforming the job market for developers, with an optimistic outlook on future work.
+- [Diving into Group Theory: Foundations for Equivariant Neural Networks](https://mobinc.vercel.app/articles/group-theory-foundations-equivariant-neural-networks): Group properties, generators, and subgroups bridging mathematics with equivariant neural network design.
+
+## Feeds
+
+- [RSS](https://mobinc.vercel.app/rss.xml)
+- [Atom](https://mobinc.vercel.app/atom.xml)
+- [JSON Feed](https://mobinc.vercel.app/rss.json)
+- [Sitemap](https://mobinc.vercel.app/sitemap.xml)
+
+## Profiles
+
+- [Google Scholar](https://scholar.google.com/citations?user=-ODlgXgAAAAJ)
+- [GitHub](https://github.com/MobinX)
+- [LinkedIn](https://www.linkedin.com/in/mobinx/)
+- [X](https://x.com/mobincx)

@@ -28,7 +28,7 @@ export async function generateMetadata({
       description: snippet?.description,
       url: `${server}/snippets/${snippet?.slug}`,
       type: "website",
-      site_name:
+      siteName:
         "Md. Mobin Chowdhury - Innovative Researcher and Skilled Mentor",
       images: [
         {

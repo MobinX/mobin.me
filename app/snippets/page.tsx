@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       "I've been writing code for a long time. Here are some of the snippets I've found useful and reusable.",
     url: `${server}/snippets`,
     type: "website",
-    site_name: "Md. Mobin Chowdhury | Personal Website",
+    siteName: "Md. Mobin Chowdhury | Personal Website",
     images: [
       {
         url: `${server}/images/og-image.png`,

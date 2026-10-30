@@ -3,6 +3,7 @@ import { server } from "config";
 import { allArticles, Article } from "contentlayer/generated";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import ArticleSchema from "components/ArticleSchema";
 import ArticlePage from "./ArticlePage";
 
 // This is the function that Next.js will call to generate the static pages
@@ -194,6 +195,7 @@ export default async function Page({
   return (
     <Container className="mt-16 lg:mt-32">
       
+      <ArticleSchema article={article} />
       <ArticlePage
         article={article}
         previousArticle={previousArticle}

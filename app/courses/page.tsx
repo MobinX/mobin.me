@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       "During my time at IUB, I've worked as a teaching assistant and research assistant for a few different courses. These are the courses I've instructed.",
     url: `${server}/courses`,
     type: "website",
-    site_name: "Md. Mobin Chowdhury | Personal Website",
+    siteName: "Md. Mobin Chowdhury | Personal Website",
     images: [
       {
         url: `${server}/images/og-image.png`,

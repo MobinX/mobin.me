@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "These materials have been tremendously beneficial to me in my learning path. I hope you find these helpful as well!",
     url: `${server}/resources`,
     type: "website",
-    site_name: "Md. Mobin Chowdhury | Personal Website",
+    siteName: "Md. Mobin Chowdhury | Personal Website",
     images: [
       {
         url: `${server}/images/og-image.png`,
