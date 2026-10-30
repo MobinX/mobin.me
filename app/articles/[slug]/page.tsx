@@ -24,9 +24,15 @@ export async function generateMetadata({
   params: { slug: string };
 }): Promise<Metadata> {
   const article = await getArticle(params.slug, await allArticles);
+  const coverUrl = article?.covers?.[0]?.url;
+  const coverImage = coverUrl
+    ? `${server}/images/${coverUrl}`
+    : `${server}/images/og-image.png`;
+  const coverAlt = article?.covers?.[0]?.alt || article?.title;
+  const description = article?.seoDescription || article?.description;
   return {
     title: article?.title,
-    description: article?.description,
+    description,
     keywords: [
       article?.tags?.map((tag) => tag.title).join(", "),
       article?.categories?.map((category) => category.title).join(", "),
@@ -38,31 +44,31 @@ export async function generateMetadata({
       title: article?.title,
       publishedTime: article?.publishedAt,
       authors: [article?.author?.name],
-      description: article?.description,
+      description,
       url: `${server}/articles/${params.slug}`,
       siteName: "Md. Mobin Chowdhury | Personal Website",
       images: [
         {
-          url: `${server}/images/${article?.covers[0].url}`,
+          url: coverImage,
           width: 1200,
           height: 630,
-          alt: article?.title,
+          alt: coverAlt,
         },
       ],
-      locals: ["en_US"],
+      locale: "en_US",
     },
 
     // Twitter
     twitter: {
-      cardType: "summary_large_image",
+      card: "summary_large_image",
       title: article?.title,
-      description: article?.description,
+      description,
       images: [
         {
-          url: `${server}/images/${article?.covers[0].url}`,
+          url: coverImage,
           width: 1200,
           height: 630,
-          alt: article?.title,
+          alt: coverAlt,
         },
       ],
       site: "@mobincx",
@@ -73,7 +79,7 @@ export async function generateMetadata({
     alternates: {
       canonical: `${server}/articles/${params.slug}`,
       types: {
-        "application/rss+xml": `${server}/feed.xml`,
+        "application/rss+xml": `${server}/rss.xml`,
       },
     },
   };

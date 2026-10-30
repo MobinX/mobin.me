@@ -11,7 +11,6 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      `${process.env.SITE_URL || "https://mobinc.vercel.app"}/sitemap.xml`,
       `${process.env.SITE_URL || "https://mobinc.vercel.app"}/server-sitemap.xml`,
     ],
   },

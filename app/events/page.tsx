@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Events - Md. Mobin Chowdhury",
     description: "All my events and achievements that I'm proud of.",
-    url: `${server}/event`,
+    url: `${server}/events`,
     type: "website",
     siteName: "Md. Mobin Chowdhury | Personal Website",
     images: [
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: `${server}/event`,
+    canonical: `${server}/events`,
     types: {
-      "application/rss+xml": `${server}/feed.xml`,
+      "application/rss+xml": `${server}/rss.xml`,
     },
   },
 };

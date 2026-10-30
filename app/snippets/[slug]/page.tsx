@@ -58,7 +58,7 @@ export async function generateMetadata({
     alternates: {
       canonical: `${server}/snippets/${snippet?.slug}`,
       types: {
-        "application/rss+xml": `${server}/feed.xml`,
+        "application/rss+xml": `${server}/rss.xml`,
       },
     },
   };

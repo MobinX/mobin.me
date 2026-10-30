@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${server}/events/${params.slug}`,
       types: {
-        "application/rss+xml": `${server}/feed.xml`,
+        "application/rss+xml": `${server}/rss.xml`,
       },
     },
   };

@@ -50,7 +50,7 @@ export async function generateMetadata({
           alt: `Articles categorized as ${params.slug}`,
         },
       ],
-      locals: ["en_US"],
+      locale: "en_US",
     },
     twitter: {
       card: "summary_large_image",
@@ -72,7 +72,7 @@ export async function generateMetadata({
     alternates: {
       canonical: `${server}/articles/categories/${params.slug}`,
       types: {
-        "application/rss+xml": `${server}/feed.xml`,
+        "application/rss+xml": `${server}/rss.xml`,
       },
     },
   };

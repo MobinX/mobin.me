@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${server}/projects`,
     types: {
-      "application/rss+xml": `${server}/feed.xml`,
+      "application/rss+xml": `${server}/rss.xml`,
     },
   },
 };

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s - Md. Mobin Chowdhury",
   },
   description:
-    "Md. Mobin Chowdhury is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
+    "Md. Mobin Chowdhury is an undergraduate physics student at the University of Dhaka researching AI, deep learning, and quantum computing.",
   generator: "Md. Mobin Chowdhury - Personal Website",
   applicationName: "Md. Mobin Chowdhury - Personal Website",
   referrer: "origin-when-cross-origin",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Md. Mobin Chowdhury | Personal Website",
     description:
-      "Md. Mobin Chowdhury is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
+      "Md. Mobin Chowdhury is an undergraduate physics student at the University of Dhaka researching AI, deep learning, and quantum computing.",
     url: `${server}`,
     siteName: "Md. Mobin Chowdhury | Personal Website",
     images: [
@@ -122,7 +122,7 @@ export const metadata: Metadata = {
     site: "@mobincx",
     title: "Md. Mobin Chowdhury | Personal Website",
     description:
-      "Md. Mobin Chowdhury is a recent college graduate with a solid foundation in computer science as well as competence in exploratory data analysis, machine learning, computer vision, and statistics. He is currently working as a Research Assistant at the Independent University, Bangladesh's Center for Computational and Data Sciences.",
+      "Md. Mobin Chowdhury is an undergraduate physics student at the University of Dhaka researching AI, deep learning, and quantum computing.",
     creator: "@mobincx",
     images: [
       {
@@ -147,7 +147,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${server}`,
     types: {
-      "application/rss+xml": `${server}/feed.xml`,
+      "application/rss+xml": `${server}/rss.xml`,
     },
   },
 };
