@@ -32,7 +32,7 @@ const MyselfjsonLd: WithContext<Person> = {
   name: "Md. Mobin Chowdhury",
   description: "A highly motivated and aspiring AI researcher with a strong background in deep learning, quantum computing, and web development. Currently an undergraduate physics student at the University of Dhaka.",
   jobTitle: "Undergraduate Student",
-  image: "https://mobinx.vercel.app/images/profile.png",
+  image: "https://mobinc.vercel.app/images/profile.png",
   gender: "Male",
   alternateName: "Mobin Chowdhury",
   callSign: "Mobin",
@@ -118,7 +118,7 @@ const MyselfjsonLd: WithContext<Person> = {
     "https://www.linkedin.com/in/mobinx/",
     "https://x.com/mobincx"
   ],
-  url: "https://mobinx.vercel.app",
+  url: "https://mobinc.vercel.app",
   
   knowsLanguage: [
     {
